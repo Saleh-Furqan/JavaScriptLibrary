@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklist</title>
+    <script src="https://kit.fontawesome.com/52d2e447de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fas fa-book-open text-primary"></i>My <span class="text-primary">Book</span>list
+        </h1>
+        <form id="book-form">
+            <div class="form-group p-2">
+                <label for="title">title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group p-2">
+                <label for="author">author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+            <div class="form-group p-2">
+                <label for="ISBN">ISBN</label>
+                <input type="text" id="isbn" class="form-control">
+            </div>
+            <div class="form-group p-2">
+                <label for="pages">pages</label>
+                <input type="number" id="pages" class="form-control">
+            </div>
+            <div class="form-group p-2">
+                <label for="Read">Read</label>
+                <input type="radio" id="read" value="no" name="yes_no" checked>No</input>
+                <input type="radio" id="read" value="yes" name="yes_no">Yes</input>
+            </div>
+            <input type="submit" value="Abb Book" class="btn btn-primary col-12">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Pages</th>
+                    <th>Read</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
